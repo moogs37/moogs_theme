@@ -1,6 +1,6 @@
 <?php
 /**
- * @package first_them
+ * @package moogs
  */
 ?>
 
@@ -9,7 +9,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
-			<?php first_them_posted_on(); ?>
+			<?php moogs_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -17,7 +17,7 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'first_them' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'moogs' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -26,25 +26,25 @@
 	<footer class="entry-meta">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'first_them' ) );
+			$category_list = get_the_category_list( __( ', ', 'moogs' ) );
 
 			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', 'first_them' ) );
+			$tag_list = get_the_tag_list( '', __( ', ', 'moogs' ) );
 
-			if ( ! first_them_categorized_blog() ) {
+			if ( ! moogs_categorized_blog() ) {
 				// This blog only has 1 category so we just need to worry about tags in the meta text
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'first_them' );
+					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'moogs' );
 				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'first_them' );
+					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'moogs' );
 				}
 
 			} else {
 				// But this blog has loads of categories so we should probably display them here
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'first_them' );
+					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'moogs' );
 				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'first_them' );
+					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'moogs' );
 				}
 
 			} // end check for categories on this blog
@@ -57,6 +57,6 @@
 			);
 		?>
 
-		<?php edit_post_link( __( 'Edit', 'first_them' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'moogs' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

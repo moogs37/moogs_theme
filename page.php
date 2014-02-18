@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package first_them
+ * @package moogs
  */
 
 get_header(); ?>

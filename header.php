@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package first_them
+ * @package moogs
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -27,12 +27,17 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'first_them' ); ?></h1>
-			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'first_them' ); ?></a>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<div class="top-bar-container">
+			<nav class="top-bar" data-topbar>
+				<ul class="title-area">
+					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+				</ul>
+				<section class="top-bar-section">
+					<?php foundation_top_bar_l(); ?>
+					<?php foundation_top_bar_r(); ?>
+				</section>
+			</nav>
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

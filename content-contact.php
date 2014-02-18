@@ -1,6 +1,6 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * The template used for displaying page content in page-contact.php
  *
  * @package moogs
  */
@@ -12,6 +12,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<a href="#" class="button radius">This is an example of a button</a>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

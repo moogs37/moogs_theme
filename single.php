@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package first_them
+ * @package moogs
  */
 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php first_them_post_nav(); ?>
+			<?php moogs_post_nav(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
