@@ -11,11 +11,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'moogs' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'moogs' ), 'moogs', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="row">	
+			<div class="site-info">
+				<div class="large-6 columns"><a href="http://www.dallassmith.net/" rel="generator"><?php printf( __( 'Theme created by %s', 'moogs' ), 'Dallas Smith' ); ?></a></div>
+					<span class="sep"> | </span>
+				<div class="large-6 columns"><?php printf( __( 'Theme: %1$s by %2$s.', 'moogs' ), 'moogs', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?></div>
+			</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
@@ -23,3 +24,5 @@
 
 </body>
 </html>
+
+</div>
