@@ -51,6 +51,20 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
+body 
+{
+	color: black;
+	font-size: $base-font-size;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: $base-font-weight;
+	line-height: 1.6;
+}
+h1
+{	
+	font-size: 36px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
+}
 
 
 /*--------------------------------------------------------------
@@ -106,11 +120,11 @@ and Blueprint http://www.blueprintcss.org/
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
+	background-color: #f8f8f8;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
-	color: #21759b;
+	color: #20389b;
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
