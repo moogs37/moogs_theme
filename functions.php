@@ -98,6 +98,32 @@ function moogs_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'moogs_scripts' );
 
+// Adding pre-defined background to page from bavotasan	
+if(function_exists('add_custom_background')) {
+	add_custom_background('set_theme_background');
+
+	function set_theme_background() {
+		$bgimage = get_background_image();
+		$bgcolor = get_background_color();
+		
+		echo "<style type='text/css'>\n";
+		 
+		if(!empty($bgimage)) {
+			$background_styles = 'background-image: url(\'' . get_theme_mod('background_image', '') . '\');'
+			. ' background-repeat: ' . get_theme_mod('background_repeat', 'repeat') . ';'
+			. ' background-position: top ' . get_theme_mod('background_position_x', 'left') .  ';' . 'background-attachment: '. get_theme_mod('background_attachment', 'scroll');
+			echo "body { ".$background_styles."); } \n";
+		} 
+		if(!empty($bgcolor)) {
+			echo "body { background-color: #".$bgcolor."; }; \n";
+		}
+		if(empty($bgimage) && empty($bgcolor)) {
+			echo "body { background: url(" . get_template_directory_uri() . "/images/triangular.png); }\n";
+		}
+		echo "</style>";
+	}
+}
+
 /**
  * Implement the Custom Header feature.
  */

@@ -12,7 +12,6 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<a href="#" class="button radius">This is an example of a button</a>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
