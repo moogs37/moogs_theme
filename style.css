@@ -56,22 +56,26 @@ and Blueprint http://www.blueprintcss.org/
 		font-size: $base-font-size;
 		font-family: Georgia, Times, "Times New Roman", serif;
 		font-weight: $base-font-weight;
-		line-height: 1.4;
+		line-height: 1.2;
+		background-image:url("images/bedge_grunge.png");
 	}
 	h1 {	
 		font-size: 30px;
 		font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 	}
 	.site-description {
-		font-size: 10px;
+		font-size: 16px;
+		font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 	}
 	.entry-title {
 		font-size: 22px;
+		font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 		font-weight: bold;
+		font-color: #336699;
 	}
 	h2 {
 		font-size: 16px;
-		font-family: "Georgia";
+		font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 	}
 	h3 {
 		font-size: 10px;
@@ -82,7 +86,14 @@ and Blueprint http://www.blueprintcss.org/
 	h5 {
 		font-size: 10px;
 	}
-
+	p {
+		font-size: 14px;
+		font-family: Georgia, Times, "Times New Roman", serif;
+	}
+	.row {
+		background-color: white;
+		border:1px gray;
+	}
 /*--------------------------------------------------------------
 3.0 Elements  (these are global non-typography styles)
 --------------------------------------------------------------*/
@@ -98,10 +109,11 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-	a:link { color:#3c5f96; }
-	a:visited{ color:#3c5f96; }
-	a:hover	{ color:#3c5f96; font-weight: bold; }
-	a:active { color:#4b819a; }
+	#site-title.a:link{ color:#666666;}
+	a:link { color:#666666; }
+	a:visited{ color:#666666; }
+	a:hover	{ color:#99CCFF; font-weight: bold; }
+	a:active { color:#99CCFF; }
 	
 /*--------------------------------------------------------------
 5.2 Menus
@@ -111,6 +123,7 @@ and Blueprint http://www.blueprintcss.org/
 	.site-main .post-navigation {
 		margin: 0 0 1.5em;
 		overflow: hidden;
+		background-color: green;
 	}
 	.comment-navigation .nav-previous,
 	.paging-navigation .nav-previous,
@@ -125,7 +138,6 @@ and Blueprint http://www.blueprintcss.org/
 		text-align: right;
 		width: 50%;
 	}
-
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -138,7 +150,7 @@ and Blueprint http://www.blueprintcss.org/
 	.screen-reader-text:hover,
 	.screen-reader-text:active,
 	.screen-reader-text:focus {
-		background-color: #f8f8f8;
+		background-color: #ffffff;
 		border-radius: 3px;
 		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 		clip: auto !important;

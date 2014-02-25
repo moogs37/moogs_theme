@@ -5,6 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<hr><!-- adding page break -->
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
